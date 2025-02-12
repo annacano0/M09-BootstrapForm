@@ -13,8 +13,45 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-<body>
+<body class="bg-dark text-white">
+    <div class="container mt-5 border-dark m-4">
+        <h2>Contact form</h2>
 
+        <form class="border-light">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Surname</label>
+                <input type="text" class="form-control" id="surname" placeholder="Surname">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Mail</label>
+                <input type="email" class="form-control" id="email" placeholder="yourmail@gmail.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Select why you are contacting us</label>
+                <select class="form-control">
+                    <option>Request more information</option>
+                    <option>I want to report an issue</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Something you want to add?"></textarea>
+
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="check">
+                <label for="check" class="form-check-label">I have read the terns and policy</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4 btn-block">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>
